@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movie Reviews</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- jQuery & jQuery Mobile -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <style>
+    .movie {
+      margin-bottom: 20px;
+    }
+
+    .movie img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .movie-details {
+      padding-top: 10px;
+    }
+
+    .movie-details h3 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .movie-details p {
+      font-size: 14px;
+    }
+
+    .review {
+      font-style: italic;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Home Page -->
+<div data-role="page" id="home" data-theme="b">
+  <div data-role="header">
+    <h1>Movie Reviews</h1>
+  </div>
+
+  <div data-role="content">
+    <ul data-role="listview" data-inset="true">
+      <li><a href="#movie1" data-transition="slide">The Dark Knight</a></li>
+      <li><a href="#movie2" data-transition="slide">Inception</a></li>
+      <li><a href="#movie3" data-transition="slide">The Matrix</a></li>
+      <li><a href="#movie4" data-transition="slide">Interstellar</a></li>
+      <li><a href="#movie5" data-transition="slide">The Shawshank Redemption</a></li>
+    </ul>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h4>Movie Reviews</h4>
+  </div>
+</div>
+
+<!-- The Dark Knight Page -->
+<div data-role="page" id="movie1" data-theme="b">
+  <div data-role="header">
+    <h1>The Dark Knight</h1>
+    <a href="#home" data-icon="home" data-transition="slide" data-direction="reverse">Home</a>
+  </div>
+
+  <div data-role="content">
+    <div class="movie">
+      <img src="https://images.unsplash.com/photo-1593011395984-bfb8e20e3e94?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1OXwwfDF8c2VhY2h8Nnx8YmxhY2slMjBsaWdodHxlbnwwfHx8fDE2NTk2Njg0NzM&ixlib=rb-1.2.1&q=80&w=1080" alt="The Dark Knight" />
+      <div class="movie-details">
+        <h3>Genre: Action, Crime, Drama</h3>
+        <p><strong>Summary:</strong> Batman sets out to dismantle the remaining criminal organizations that plague Gotham City, but he is soon threatened by a criminal mastermind known as the Joker.</p>
+        <p class="review"><strong>Review:</strong> A masterpiece that blends thrilling action, gripping narrative, and compelling characters. Heath Ledger's performance as the Joker is unforgettable.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Inception Page -->
+<div data-role="page" id="movie2" data-theme="b">
+  <div data-role="header">
+    <h1>Inception</h1>
+    <a href="#home" data-icon="home" data-transition="slide" data-direction="reverse">Home</a>
+  </div>
+
+  <div data-role="content">
+    <div class="movie">
+      <img src="https://images.unsplash.com/photo-1547463201-19b51f06d496?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1OXwwfDF8c2VhY2h8Mnx8aW5jZXB0aW9uJTIwbm9pc2N8ZW58MHx8fHwxNjYwMzkxNTQ2&ixlib=rb-1.2.1&q=80&w=1080" alt="Inception" />
+      <div class="movie-details">
+        <h3>Genre: Action, Adventure, Sci-Fi</h3>
+        <p><strong>Summary:</strong> A skilled thief is given a chance to have his criminal record erased if he can successfully perform an inception: planting an idea into someone's mind.</p>
+        <p class="review"><strong>Review:</strong> Inception is a visually stunning, intellectually stimulating film that explores the boundaries of dreams and reality. A must-see for fans of complex narratives.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- The Matrix Page -->
+<div data-role="page" id="movie3" data-theme="b">
+  <div data-role="header">
+    <h1>The Matrix</h1>
+    <a href="#home" data-icon="home" data-transition="slide" data-direction="reverse">Home</a>
+  </div>
+
+  <div data-role="content">
+    <div class="movie">
+      <img src="https://images.unsplash.com/photo-1555412131-9f3b55735d4f?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1OXwwfDF8c2VhY2h8NXx8bWVkaXfDqWxtfGVufDB8fHx8fDE2NjEwNzkxNjE&ixlib=rb-1.2.1&q=80&w=1080" alt="The Matrix" />
+      <div class="movie-details">
+        <h3>Genre: Action, Sci-Fi</h3>
+        <p><strong>Summary:</strong> A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.</p>
+        <p class="review"><strong>Review:</strong> The Matrix is a groundbreaking film that challenges the viewer's perception of reality, with innovative action sequences and thought-provoking themes.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Interstellar Page -->
+<div data-role="page" id="movie4" data-theme="b">
+  <div data-role="header">
+    <h1>Interstellar</h1>
+    <a href="#home" data-icon="home" data-transition="slide" data-direction="reverse">Home</a>
+  </div>
+
+  <div data-role="content">
+    <div class="movie">
+      <img src="https://images.unsplash.com/photo-1513723381981-fd5459fe0195?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1OXwwfDF8c2VhY2h8OXx8aW5sZXQlMjBvY2VhbnxlbnwwfHx8fDE2NjA4Nzg0NzY&ixlib=rb-1.2.1&q=80&w=1080" alt="Interstellar" />
+      <div class="movie-details">
+        <h3>Genre: Adventure, Drama, Sci-Fi</h3>
+        <p><strong>Summary:</strong> A team of explorers ventures through a wormhole in space in an attempt to ensure humanity's survival.</p>
+        <p class="review"><strong>Review:</strong> Interstellar is an epic cinematic experience, combining stunning visuals, strong performances, and deep existential themes. A modern sci-fi classic.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- The Shawshank Redemption Page -->
+<div data-role="page" id="movie5" data-theme="b">
+  <div data-role="header">
+    <h1>The Shawshank Redemption</h1>
+    <a href="#home" data-icon="home" data-transition="slide" data-direction="reverse">Home</a>
+  </div>
+
+  <div data-role="content">
+    <div class="movie">
+      <img src="https://images.unsplash.com/photo-1586331483019-71028915fbd1?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1OXwwfDF8c2VhY2h8OHx8c2hhd3NoYW5rJTIwcmVsbmVtcHRpb258ZW58MHx8fHwxNjYwMzkxNTQ1&ixlib=rb-1.2.1&q=80&w=1080" alt="The Shawshank Redemption" />
+      <div class="movie-details">
+        <h3>Genre: Drama</h3>
+        <p><strong>Summary:</strong> Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.</p>
+        <p class="review"><strong>Review:</strong> The Shawshank Redemption is a poignant tale of friendship, hope, and resilience. A must-watch for any movie lover.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

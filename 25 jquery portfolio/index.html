@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- jQuery + jQuery Mobile CDN -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  
+  <style>
+    .content-padding {
+      padding: 30px 30px 30px 30px;
+    }
+
+    .project-card {
+      background: #f9f9f9;
+      padding: 10px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .skill-tag {
+      /* display: inline-block; */
+      width: 5%;
+      background-color: #9b9fa3;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 15px;
+      margin: 20px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Home / About Me Page -->
+  <div data-role="page" id="about">
+    <div data-role="header">
+      <h1>About Me</h1>
+    </div>
+
+    <div data-role="content" class="content-padding">
+      <img src="profile.jpg" alt="My Photo" style="width:100%; max-width:150px; border-radius:50%;">
+      <p class="content-padding">Hello! I'm Srirang Kalantri, a passionate developer with a love for creating engaging web and mobile experiences. I specialize in front-end technologies and enjoy building beautiful, functional UIs.</p>
+      <a href="#projects" class="ui-btn ui-btn-b">View Projects</a>
+      <a href="#skills" class="ui-btn ui-btn-b">Skills</a>
+      <a href="#contact" class="ui-btn ui-btn-b">Contact</a>
+    </div>
+
+    <div data-role="footer">
+      <h4>My Portfolio</h4>
+    </div>
+  </div>
+
+  <!-- Projects Page -->
+  <div data-role="page" id="projects">
+    <div data-role="header">
+      <a href="#about" data-icon="back">Back</a>
+      <h1>Projects</h1>
+    </div>
+
+    <div data-role="content" class="content-padding">
+      <div class="project-card">
+        <h3>Recipe Finder</h3>
+        <p>Built with React and OpenAI API, this app recommends recipes based on ingredients.</p>
+      </div>
+      <div class="project-card">
+        <h3>Smart Parking System</h3>
+        <p>A graph-based system that assigns optimal parking slots using image analysis.</p>
+      </div>
+      <div class="project-card">
+        <h3>Flutter Dementia App</h3>
+        <p>Designed brain games and therapy tools for dementia patients using Flutter.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Skills Page -->
+  <div data-role="page" id="skills">
+    <div data-role="header">
+      <a href="#about" data-icon="back">Back</a>
+      <h1>Skills</h1>
+    </div>
+
+    <div data-role="content" class="content-padding">
+      <div class="skill-tag">Flutter</div>
+      <div class="skill-tag">React</div>
+      <div class="skill-tag">JavaScript</div>
+      <div class="skill-tag">Node.js</div>
+      <div class="skill-tag">MongoDB</div>
+      <div class="skill-tag">Firebase</div>
+      <div class="skill-tag">Express</div>
+    </div>
+  </div>
+
+  <!-- Contact Page -->
+  <div data-role="page" id="contact">
+    <div data-role="header">
+      <a href="#about" data-icon="back">Back</a>
+      <h1>Contact</h1>
+    </div>
+
+    <div data-role="content" class="content-padding">
+      <p><strong>Email:</strong> sk@gmail.com</p>
+      <p><strong>Phone:</strong> +91 12345 67890</p>
+      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/sk" target="_blank">linkedin.com/in/sk</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/sk" target="_blank">github.com/sk</a></p>
+    </div>
+  </div>
+
+</body>
+</html>
