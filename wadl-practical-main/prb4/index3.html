@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Online Learning Hub - Courses</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f9ff;
+      color: #333;
+    }
+
+    /* Header and Navbar */
+    header {
+      background-color: #0077b6;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #0077b6;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      padding: 10px 20px;
+      margin: 0 10px;
+      font-size: 16px;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #005f73;
+      border-radius: 5px;
+    }
+
+    /* Main content */
+    .content {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .intro, .learning-paths, .course-categories, .courses {
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #0077b6;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin: 8px 0;
+    }
+
+    .course-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .course-table th, .course-table td {
+      padding: 14px;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+
+    .course-table th {
+      background-color: #caf0f8;
+    }
+
+    .search-bar input {
+      padding: 8px;
+      width: 100%;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      nav {
+        display: block;
+        text-align: center;
+      }
+
+      .content {
+        margin-left: 0;
+        width: 100%;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Online Learning Hub - Courses</h1>
+  </header>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="#" onclick="filterByCategory('AI & ML')">AI & ML</a>
+    <a href="#" onclick="filterByCategory('Data Science')">Data Science</a>
+    <a href="#" onclick="filterByCategory('Web Development')">Web Development</a>
+    <a href="#" onclick="filterByCategory('Cybersecurity')">Cybersecurity</a>
+    <a href="#" onclick="filterByCategory('Cloud Computing')">Cloud Computing</a>
+    <div class="search-bar">
+      <input type="text" id="courseSearch" placeholder="Search Courses..." onkeyup="filterCourses()" />
+    </div>
+  </nav>
+
+  <!-- Main content -->
+  <div class="content">
+    <section class="intro">
+      <h2>Welcome to Online Learning Hub</h2>
+      <p>Unlock your potential with Online Learning Hub – your gateway to quality, flexible, and affordable education. Learn at your own pace from industry experts and gain practical skills to stay ahead in today’s competitive world. Join thousands of learners today!</p>
+    </section>
+
+    <section class="learning-paths">
+      <h2>Step-by-Step Learning Paths</h2>
+      <ul>
+        <li>1. Beginner – Start with the basics</li>
+        <li>2. Intermediate – Deepen your understanding</li>
+        <li>3. Advanced – Master complex concepts</li>
+      </ul>
+    </section>
+
+    <section class="course-categories">
+      <h2>Course Categories</h2>
+      <ul>
+        <li>AI & ML</li>
+        <li>Data Science</li>
+        <li>Web Development</li>
+        <li>Cybersecurity</li>
+        <li>Cloud Computing</li>
+      </ul>
+    </section>
+
+    <section class="courses">
+      <h2>Available Courses</h2>
+      <table class="course-table" id="courseTable">
+        <thead>
+          <tr>
+            <th>Course Name</th>
+            <th>Instructor</th>
+            <th>Duration</th>
+            <th>Fee (INR ₹)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="AI & ML">
+            <td>Machine Learning Essentials</td>
+            <td>Dr. A. Sharma</td>
+            <td>6 Weeks</td>
+            <td>₹5,000</td>
+          </tr>
+          <tr class="Data Science">
+            <td>Introduction to Data Science</td>
+            <td>Ritika Mehta</td>
+            <td>8 Weeks</td>
+            <td>₹6,500</td>
+          </tr>
+          <tr class="Web Development">
+            <td>Full-Stack Web Development</td>
+            <td>Arjun Kapoor</td>
+            <td>10 Weeks</td>
+            <td>₹7,000</td>
+          </tr>
+          <tr class="AI & ML">
+            <td>AI for Everyone</td>
+            <td>Dr. Leena Patil</td>
+            <td>4 Weeks</td>
+            <td>₹3,500</td>
+          </tr>
+          <tr class="Cloud Computing">
+            <td>Cloud Infrastructure Fundamentals</td>
+            <td>Neeraj Rao</td>
+            <td>6 Weeks</td>
+            <td>₹4,800</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+  <script>
+    // Function to filter courses based on search input
+    function filterCourses() {
+      var input, filter, table, tr, td, i, txtValue;
+      input = document.getElementById("courseSearch");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("courseTable");
+      tr = table.getElementsByTagName("tr");
+
+      for (i = 1; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+          txtValue = td.textContent || td.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }
+      }
+    }
+
+    // Function to filter courses by category
+    function filterByCategory(category) {
+      var table, tr, i;
+      table = document.getElementById("courseTable");
+      tr = table.getElementsByTagName("tr");
+
+      for (i = 1; i < tr.length; i++) {
+        if (tr[i].classList.contains(category)) {
+          tr[i].style.display = "";
+        } else {
+          tr[i].style.display = "none";
+        }
+      }
+    }
+  </script>
+
+</body>
+</html>

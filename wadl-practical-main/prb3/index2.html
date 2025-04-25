@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ABC Delights - Restaurant Menu</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff8f0;
+      color: #333;
+    }
+
+    header {
+      background-color: #e63946;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    section {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #e63946;
+      margin-bottom: 10px;
+    }
+
+    .intro {
+      background-color: #f8edeb;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+
+    .top-dishes, .cuisines {
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li::before {
+      content: "🍽️ ";
+      margin-right: 8px;
+    }
+
+    .menu-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    .menu-table th, .menu-table td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: left;
+    }
+
+    .menu-table th {
+      background-color: #ffddd2;
+    }
+
+    .dish-image {
+      width: 100px;
+      border-radius: 6px;
+    }
+
+    @media (max-width: 600px) {
+      .dish-image {
+        width: 80px;
+      }
+
+      .menu-table td, .menu-table th {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>ABC Delights - Restaurant Menu</h1>
+  </header>
+
+  <section class="intro">
+    <h2>Welcome to ABC Delights</h2>
+    <p>At ABC Delights, we serve happiness with every plate. Our chef, with over 20 years of culinary experience, crafts each dish with passion and care. We promise fresh ingredients, authentic flavors, and unforgettable meals. Bon appétit!</p>
+  </section>
+
+  <section class="top-dishes">
+    <h2>Top Dishes (Most Popular)</h2>
+    <ul>
+      <li>1. Paneer Tikka</li>
+      <li>2. Biryani</li>
+      <li>3. Butter Chicken</li>
+      <li>4. Margherita Pizza</li>
+      <li>5. Veg Hakka Noodles</li>
+    </ul>
+  </section>
+
+  <section class="cuisines">
+    <h2>Available Cuisines</h2>
+    <ul>
+      <li>Italian</li>
+      <li>Indian</li>
+      <li>Chinese</li>
+    </ul>
+  </section>
+
+  <section class="menu">
+    <h2>Our Menu</h2>
+    <table class="menu-table">
+      <thead>
+        <tr>
+          <th>Dish Image</th>
+          <th>Dish Name</th>
+          <th>Description</th>
+          <th>Price (INR ₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="https://via.placeholder.com/100x70?text=Paneer+Tikka" class="dish-image" alt="Paneer Tikka" /></td>
+          <td>Paneer Tikka</td>
+          <td>Grilled paneer cubes marinated in spicy yogurt blend.</td>
+          <td>₹250</td>
+        </tr>
+        <tr>
+          <td><img src="https://via.placeholder.com/100x70?text=Biryani" class="dish-image" alt="Biryani" /></td>
+          <td>Biryani</td>
+          <td>Fragrant basmati rice cooked with aromatic spices and meat or veggies.</td>
+          <td>₹300</td>
+        </tr>
+        <tr>
+          <td><img src="https://via.placeholder.com/100x70?text=Butter+Chicken" class="dish-image" alt="Butter Chicken" /></td>
+          <td>Butter Chicken</td>
+          <td>Succulent chicken pieces in a creamy tomato-based curry.</td>
+          <td>₹320</td>
+        </tr>
+        <tr>
+          <td><img src="https://via.placeholder.com/100x70?text=Pizza" class="dish-image" alt="Margherita Pizza" /></td>
+          <td>Margherita Pizza</td>
+          <td>Classic Italian pizza topped with tomatoes, mozzarella, and basil.</td>
+          <td>₹270</td>
+        </tr>
+        <tr>
+          <td><img src="https://via.placeholder.com/100x70?text=Noodles" class="dish-image" alt="Veg Hakka Noodles" /></td>
+          <td>Veg Hakka Noodles</td>
+          <td>Stir-fried noodles with colorful vegetables and soy sauce.</td>
+          <td>₹220</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+</body>
+</html>
