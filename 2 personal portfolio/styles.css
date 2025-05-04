@@ -37,7 +37,7 @@ nav a:hover {
 }
 
 section {
-  padding: 30px 20px;
+  padding: 30px 10px;
   max-width: 800px;
   margin: auto;
 }
@@ -48,7 +48,7 @@ h2 {
 }
 
 ul {
-  list-style-type: square;
+  /* list-style-type: square; */
   padding-left: 20px;
 }
 

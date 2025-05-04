@@ -10,7 +10,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // API to return users.json data
 app.get('/users', (req, res) => {
-  fs.readFile(path.join(__dirname, 'users.json'), 'utf8', (err, data) => {
+  fs.readFile('users.json', 'utf8', (err, data) => {
     if (err) {
       res.status(500).json({ message: 'Error reading user data' });
       return;
@@ -18,6 +18,7 @@ app.get('/users', (req, res) => {
     res.json(JSON.parse(data));
   });
 });
+
 
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);

@@ -10,7 +10,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // API to get product list
 app.get('/api/products', (req, res) => {
-  fs.readFile(path.join(__dirname, 'products.json'), 'utf8', (err, data) => {
+  fs.readFile('products.json', 'utf8', (err, data) => {
     if (err) {
       return res.status(500).json({ message: 'Unable to load products' });
     }

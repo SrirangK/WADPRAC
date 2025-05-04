@@ -28,7 +28,7 @@ function renderTable() {
     tbody.appendChild(row);
   });
 
-  document.getElementById("pageInfo").textContent = `Page ${currentPage} of ${Math.ceil(products.length / itemsPerPage)}`;
+  document.getElementById("pageInfo").innerHTML = `Page ${currentPage} of ${Math.ceil(products.length / itemsPerPage)}`;
 }
 
 function prevPage() {

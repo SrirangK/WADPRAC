@@ -71,7 +71,7 @@ footer {
   bottom: 0;
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   td img {
     width: 60px;
   }
@@ -83,4 +83,4 @@ footer {
   header h1 {
     font-size: 1.8rem;
   }
-}
+} */

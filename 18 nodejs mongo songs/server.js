@@ -31,7 +31,7 @@ app.get('/', async (req, res) => {
   const html = fs.readFileSync('./views/index.html', 'utf8');
   const rows = songs.map(s => `
     <tr><td>${s.songname}</td><td>${s.film}</td><td>${s.music_director}</td><td>${s.singer}</td><td>${s.actor || ''}</td><td>${s.actress || ''}</td></tr>
-  `);
+  `); 
   res.send(html.replace('<!--SONG_ROWS-->', rows).replace('<!--COUNT-->', songs.length));
 });
 

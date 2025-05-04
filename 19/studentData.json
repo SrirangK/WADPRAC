@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Alice",
+        "roll_no": 1,
+        "wad": 85,
+        "cc": 78,
+        "dsbda": 92,
+        "cns": 88,
+        "ai": 91
+    },
+    {
+        "name": "Bob",
+        "roll_no": 2,
+        "wad": 75,
+        "cc": 80,
+        "dsbda":92,
+        "cns": 82,
+        "ai": 79
+    }
+]

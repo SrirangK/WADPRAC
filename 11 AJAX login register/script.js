@@ -41,7 +41,7 @@ function loginUser() {
   const matchedUser = users.find(u => u.username === username && u.password === password);
 
   if (matchedUser) {
-    alert("Login successful!");
+    // alert("Login successful!");
     window.location.href = "users.html";
   } else {
     alert("Invalid username or password.");
@@ -49,7 +49,7 @@ function loginUser() {
 }
 
 function showUsers() {
-  const tableBody = document.querySelector("#userTable tbody");
+  const tableBody = document.getElementById("tbody");
   users.forEach(user => {
     const row = document.createElement("tr");
     row.innerHTML = `
