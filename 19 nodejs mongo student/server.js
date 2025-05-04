@@ -124,18 +124,6 @@ app.get('/update-marks/:rollno', async (req, res) => {
       }
     );
 
-    if (result.modifiedCount === 1) {
-      const updatedStudent = await Student.findOne({ Roll_No: rollno });
-      res.send(`
-        <h2>Student Updated Successfully</h2>
-        <p>Updated ${result.modifiedCount} document</p>
-        <h3>Updated Student Details:</h3>
-        <pre>${JSON.stringify(updatedStudent, null, 2)}</pre>
-        <a href="/list-all">Back to List</a>
-      `);
-    } else {
-      res.send('No student was updated. Student might not exist.');
-    }
   } catch (err) {
     res.status(500).send(`Error: ${err.message}`);
   }
