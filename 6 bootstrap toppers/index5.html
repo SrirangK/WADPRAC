@@ -1,99 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Pune Institute of Computer Technology</title>
-  <!-- Bootstrap CSS CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- ✅ Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">PICT</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#achievements">Our Achievements</a></li>
-          <li class="nav-item"><a class="nav-link" href="#toppers">Year-Wise Toppers</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Welcome</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Achievements</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Toppers</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- ✅ Main Section -->
-  <div class="container my-5">
-    <h1 class="text-center mb-4">Welcome to Pune Institute of Computer Technology</h1>
-    
-    <!-- Achievements Section -->
-    <section id="achievements">
-      <h2 class="text-center mb-4">Our Achievements</h2>
-      <p class="text-center">PICT has consistently produced top-performing students and industry leaders.</p>
-    </section>
+  <header class="bg-light text-center py-4">
+    <h1 class="display-5">Pune Institute of Computer Technology</h1>
+  </header>
 
-    <!-- ✅ Toppers Section -->
-    <section id="toppers" class="mt-5">
-      <h2 class="text-center mb-4">Year-Wise Toppers</h2>
-      <div class="row">
-        <!-- 📌 Card 1 -->
-        <div class="col-md-4 col-sm-6 col-12 mb-4">
-          <div class="card h-100 text-center">
-            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Topper Photo">
-            <div class="card-body">
-              <h5 class="card-title">Anjali Deshmukh</h5>
-              <p class="card-text">Dept: Computer Engineering</p>
-              <p class="card-text">Percentage: 91%</p>
-              <p class="card-text">Year: 2022</p>
-            </div>
-          </div>
-        </div>
+  <section class="container my-5">
+    <h2 class="mb-4">Welcome to XYZ College</h2>
+    <p>PICT is a renowned engineering institute known for academic excellence and innovation.</p>
 
-        <!-- 📌 Card 2 -->
-        <div class="col-md-4 col-sm-6 col-12 mb-4">
-          <div class="card h-100 text-center">
-            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Topper Photo">
-            <div class="card-body">
-              <h5 class="card-title">Rohan Patil</h5>
-              <p class="card-text">Dept: IT</p>
-              <p class="card-text">Percentage: 89%</p>
-              <p class="card-text">Year: 2021</p>
-            </div>
-          </div>
-        </div>
+    <h2 class="mt-5 mb-4">Our Achievements</h2>
+    <p>Ranked among top engineering colleges with numerous accolades in research, placements, and student development.</p>
 
-        <!-- 📌 Card 3 -->
-        <div class="col-md-4 col-sm-6 col-12 mb-4">
-          <div class="card h-100 text-center">
-            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Topper Photo">
-            <div class="card-body">
-              <h5 class="card-title">Sneha Kulkarni</h5>
-              <p class="card-text">Dept: E&TC</p>
-              <p class="card-text">Percentage: 93%</p>
-              <p class="card-text">Year: 2020</p>
-            </div>
+    <h2 class="mt-5 mb-4">Year-Wise Toppers</h2>
+  </section>
+
+  <section class="container">
+    <div class="row g-4">
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card h-100">
+          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Topper Photo">
+          <div class="card-body">
+            <h5 class="card-title">2023 - Priya Sharma</h5>
+            <p class="card-text">Department: Computer Engineering</p>
+            <p class="card-text">Percentage: 92.4%</p>
           </div>
         </div>
       </div>
-    </section>
-  </div>
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card h-100">
+          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Topper Photo">
+          <div class="card-body">
+            <h5 class="card-title">2022 - Rahul Deshmukh</h5>
+            <p class="card-text">Department: IT</p>
+            <p class="card-text">Percentage: 91.8%</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card h-100">
+          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Topper Photo">
+          <div class="card-body">
+            <h5 class="card-title">2021 - Sneha Kulkarni</h5>
+            <p class="card-text">Department: E&TC</p>
+            <p class="card-text">Percentage: 93.2%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!-- ✅ Footer -->
-  <footer class="bg-dark text-white text-center py-4">
-    <p>Pune Institute of Computer Technology, Dhankawadi, Pune - 411043</p>
-    <p>Contact: info@pict.edu | +91 12345 67890</p>
-    <p>
-      <a href="#" class="text-white me-2">Facebook</a>
-      <a href="#" class="text-white me-2">Twitter</a>
-      <a href="#" class="text-white">LinkedIn</a>
-    </p>
+  <footer class="bg-dark text-white text-center text-lg-start mt-5">
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Contact Us</h5>
+          <p>Pune Institute of Computer Technology,<br>
+            Dhankawadi, Pune – 411043, Maharashtra, India<br>
+            Phone: +91-20-24371101<br>
+            Email: info@pict.edu</p>
+        </div>
+        <div class="col-md-6">
+          <h5>Follow Us</h5>
+          <a href="#" class="text-white me-3">Facebook</a>
+          <a href="#" class="text-white me-3">Twitter</a>
+          <a href="#" class="text-white">Instagram</a>
+        </div>
+      </div>
+    </div>
+  
   </footer>
 
-  <!-- Bootstrap JS CDN -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

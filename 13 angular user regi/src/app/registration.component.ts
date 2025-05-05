@@ -14,7 +14,7 @@ import { Router } from '@angular/router';
       <input [(ngModel)]="user.password" name="password" placeholder="Password" required type="password" />
       <button type="submit">Register</button>
     </form>
-    <p>Already registered? <a routerLink="/login">Login</a></p>
+    <p>Already registered? <a href="/login">Login</a></p>
   `,
 })
 export class RegistrationComponent {
@@ -25,6 +25,6 @@ export class RegistrationComponent {
   registerUser() {
     localStorage.setItem('user', JSON.stringify(this.user));
     alert('Registration successful!');
-    this.router.navigate(['/login']);
+    this.router.navigate(['/login']); 
   }
 }
