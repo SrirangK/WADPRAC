@@ -13,7 +13,9 @@
     }
 
     section {
-      padding: 30px 40px;
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
     }
 
     h2 {

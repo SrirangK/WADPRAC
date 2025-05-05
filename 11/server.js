@@ -22,9 +22,17 @@ app.post('/post',(req,res)=>{
 
 app.post('/login',(req,res)=>{
     const {email,number}=req.body;
-    let found=false;
-    users.forEach(user=>{
-        if(user.email==email && user.number==number) return res.status(200).send("logged in");
-    })
+    const match = users.find(user=>
+        user.email===email && user.number===number
+    );
+    console.log("users",users);
+    if(match){
+        // found=true;
+        return res.status(200).send("login successfull");
+    }
     return res.status(404).send("user not found");
+});
+
+app.get('/get',(req,res)=>{
+    return res.status(200).send(users);
 });

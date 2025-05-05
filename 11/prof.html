@@ -6,6 +6,33 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>HI</h1>
+    <div id="container">
+
+    </div>
+    <script>
+        const xhr=new XMLHttpRequest();
+        xhr.open('GET','http://localhost:8000/get',true);
+        xhr.setRequestHeader("Content-Type", "application/json");
+        xhr.onload=function(){
+            if(this.status===200){
+                // console.log(this.responseText);
+                const data=JSON.parse(this.responseText);
+                const container=document.getElementById('container');
+                // container.innerHTML = "";
+                data.forEach((user)=>{
+                    container.innerHTML=`
+                            <h1>${user.name}</h1>
+                            <p>${user.email}</p>
+                            <p>${user.number}</p>
+                            <p>${user.dob}</p>
+                            <p>${user.city}</p>
+                        `;
+                });
+                
+            }
+            else alert(error);
+        }
+        xhr.send();
+    </script>
 </body>
 </html>
