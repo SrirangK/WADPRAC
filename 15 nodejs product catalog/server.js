@@ -5,10 +5,8 @@ const path = require('path');
 const app = express();
 const PORT = 3000;
 
-// Serve static files (HTML, CSS, images)
 app.use(express.static(path.join(__dirname, 'public')));
 
-// API to get product list
 app.get('/api/products', (req, res) => {
   fs.readFile('products.json', 'utf8', (err, data) => {
     if (err) {
